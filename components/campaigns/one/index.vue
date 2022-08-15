@@ -44,6 +44,7 @@
           ><button @click="store.increment('lightness', 100, 10)">+</button>
         </li>
       </ul>
+      <!-- <button @click="store.randomize()">randomize</button> -->
     </div>
   </div>
 </template>
@@ -53,19 +54,10 @@ import { useStore1 } from './store1'
 
 const store = useStore1()
 
-interface hslObject {
-  dimension: string
-  limit: number
-  amount: number
-}
-
 console.log(store)
 </script>
 
 <style lang="scss" scoped>
-* {
-  // border: 1px dotted black;
-}
 .container {
   display: flex;
   flex-direction: row;
