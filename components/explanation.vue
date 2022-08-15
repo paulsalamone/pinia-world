@@ -15,12 +15,12 @@
 <ul>
             <li>
               <NuxtLink to="/parent/campaign1"
-                ><a>Campaign One (composition API)</a></NuxtLink
+                ><a>Campaign One </a></NuxtLink
               >
             </li>
             <li>
               <NuxtLink to="/parent/campaign2"
-                ><a>Campaign Two (options API)</a></NuxtLink
+                ><a>Campaign Two </a></NuxtLink
               >
             </li>
           </ul>

@@ -9,22 +9,15 @@ export const useStore1 = defineStore('store1', {
         saturation: 20,
         lightness: 50,
       },
-
       globalStore: useGlobalStore(),
     }
   },
   actions: {
-    // randomize(): void {
-    //   this.hsl.hue += Math.floor(Math.random() / 8)
-    //   this.hsl.saturation += Math.floor(Math.random() / 5)
-    //   this.hsl.lightness += Math.floor(Math.random() / 6)
-    // },
     increment(dimension: string, limit: number, amount: number): void {
       switch (dimension) {
         case 'hue':
           this.hsl.hue < 360 ? (this.hsl.hue += amount) : (this.hsl.hue = 0)
           this.globalStore.points += 1
-
           break
         case 'saturation':
           this.hsl.saturation < 100
