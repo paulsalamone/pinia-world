@@ -1,0 +1,32 @@
+{
+  "name": "nuxt2-pinia",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:prettier",
+    "lintfix": "prettier --write --list-different ."
+  },
+  "dependencies": {
+    "@nuxtjs/composition-api": "^0.33.1",
+    "@pinia/nuxt": "0.2.1",
+    "core-js": "^3.19.3",
+    "nuxt": "^2.15.8",
+    "pinia": "^2.0.18",
+    "sass": "^1.54.4",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1"
+  }
+}
