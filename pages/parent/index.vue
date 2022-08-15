@@ -1,3 +1,3 @@
 <template>
-  <div>click link</div>
+  <Explanation />
 </template>
