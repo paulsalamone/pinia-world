@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <div class="box0" :style="{ border: `${store.borders[0]}px solid black` }">
+    <div class="box0" :style="{ border: `${store.bordersO.b1}px solid black` }">
       <div
         class="box1"
-        :style="{ border: `${store.borders[1]}px solid black` }"
+        :style="{ border: `${store.bordersO.b2}px solid black` }"
       >
         <div
           class="box2"
-          :style="{ border: `${store.borders[2]}px solid black` }"
+          :style="{ border: `${store.bordersO.b3}px solid black` }"
         ></div>
       </div>
     </div>
@@ -17,19 +17,19 @@
       <p>increment borders:</p>
       <ul>
         <li>
-          Border 1: {{ store.borders[0]
-          }}<button @click="store.decrement(0)">-</button
-          ><button @click="store.increment(0)">+</button>
+          Border 1: {{ store.bordersO.b1
+          }}<button @click="store.decrement('b1')">-</button
+          ><button @click="store.increment('b1')">+</button>
         </li>
         <li>
-          Border 2: {{ store.borders[1]
-          }}<button @click="store.decrement(1)">-</button
-          ><button @click="store.increment(1)">+</button>
+          Border 2: {{ store.bordersO.b2
+          }}<button @click="store.decrement('b2')">-</button
+          ><button @click="store.increment('b2')">+</button>
         </li>
         <li>
-          Border 3: {{ store.borders[2]
-          }}<button @click="store.decrement(2)">-</button
-          ><button @click="store.increment(2)">+</button>
+          Border 3: {{ store.bordersO.b3
+          }}<button @click="store.decrement('b3')">-</button
+          ><button @click="store.increment('b3')">+</button>
         </li>
       </ul>
     </div>
@@ -45,10 +45,6 @@ console.log(store)
 </script>
 
 <style lang="scss" scoped>
-* {
-  // border: 1px dotted gray;
-}
-
 .container {
   display: flex;
   flex-direction: row;

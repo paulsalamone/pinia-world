@@ -5,7 +5,7 @@
     <br />
     <br />
 
-    <!-- <p>quick links (hide):</p>
+    <p>quick links (hide):</p>
     <ul>
       <li>
         <NuxtLink to="/parent/campaign1"><a>Campaign One</a></NuxtLink>
@@ -13,7 +13,7 @@
       <li>
         <NuxtLink to="/parent/campaign2"><a>Campaign Two</a></NuxtLink>
       </li>
-    </ul> -->
+    </ul>
   </div>
 </template>
 

@@ -24,7 +24,6 @@ export const useStore1 = defineStore('store1', {
             ? (this.hsl.saturation += amount)
             : (this.hsl.saturation = 0)
           this.globalStore.points += 1
-
           break
         case 'lightness':
           this.hsl.lightness < 100
